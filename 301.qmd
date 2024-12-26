@@ -6,4 +6,51 @@ filters:
   - webr
 ---
 
+# Basics
+
+Mean vector $\mu' = (\mu_1 , \mu_2, \dots , \mu_k)'; [k>2]$
+
+**Condition of PDF:**
+
+1.  $\int_x f(x) dx = 1$
+
+2.  $f(x) \ge 0$
+
+**Condition of PMF:**
+
+1.  $\sum_x p(x)=1$
+
+2.  $0\le p(x) \le 1$
+
+**Example:**
+
+$f(x) = kx^2; [0\le x \le 1]$ is a pdf. Then find k
+
+**Answer:** Thus f(x) is a pdf, $$\therefore \int_x f(x) dx = 1$$ $$\Rightarrow \int_0^1 kx^2 dx = 1$$ $$\Rightarrow \frac{k}{3} [x^3]_0^1=1$$ $$\Rightarrow \frac{k}{3} \times 1 = 1$$ $$\therefore k = 3$$
+Therfore, the pdf is $f(x) = 3x^2; [0\le x \le 1]$
+
+```{r echo=FALSE}
+x = seq(0, 1, 0.01)
+y = 3*x^2
+plot(x, y, type = "l", main=expression(f(x): 3*x^2))
+```
+
+## Joint PDF
+**X and Y are random variable and the joint pdf is,** $f(x, y) = cx^3y \\ 0 \le x \le 1, y \ge 0$
+
+1. **Find** $r_{xy}$
+2. 
+
+
+# Multivariate Normal Distribution (MND)
+
+## Introduction
+
+A vector valued random variable $X = (x_1, x_2, \dots, x_p)'$ is said to have a multivarite normal distribution with mean vector $\mu = (\mu_1, \mu_2, \dots , \mu_p)'$ and variance-covariance matrix $\Sigma = \{\sigma_{ij}\}, i, j = 1, 2, \dots, p$ if its pdf is defined as, 
+$$f(X)=\frac{1}{(2\Pi)^{\frac{p}{2}} |\Sigma |^\frac{1}{2}} exp\Big[ -\frac{1}{2} (X-\mu)'\Sigma^{-1} (X-\mu) \Big] $$
+or, $$f(X)=(2\Pi)^{-\frac{p}{2}} |\Sigma |^{-\frac{1}{2}} exp\Big[ -\frac{1}{2} (X-\mu)'\Sigma^{-1} (X-\mu) \Big]$$
+$$-\infty<x_i<\infty, -\infty<\mu_i < \infty \\ \sigma_{ij} > 0; i=1, 2, \dots, p$$
+
+## Derivation of MND
+
 

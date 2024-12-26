@@ -16,8 +16,36 @@
   {
     "objectID": "301.html",
     "href": "301.html",
-    "title": "Class Notes",
+    "title": "B.Stat.-301",
     "section": "",
-    "text": "abdc"
+    "text": "Mean vector \\(\\mu' = (\\mu_1 , \\mu_2, \\dots , \\mu_k)'; [k&gt;2]\\)\nCondition of PDF:\n\n\\(\\int_x f(x) dx = 1\\)\n\\(f(x) \\ge 0\\)\n\nCondition of PMF:\n\n\\(\\sum_x p(x)=1\\)\n\\(0\\le p(x) \\le 1\\)\n\nExample:\n\\(f(x) = kx^2; [0\\le x \\le 1]\\) is a pdf. Then find k\nAnswer: Thus f(x) is a pdf, \\[\\therefore \\int_x f(x) dx = 1\\] \\[\\Rightarrow \\int_0^1 kx^2 dx = 1\\] \\[\\Rightarrow \\frac{k}{3} [x^3]_0^1=1\\] \\[\\Rightarrow \\frac{k}{3} \\times 1 = 1\\] \\[\\therefore k = 3\\] Therfore, the pdf is \\(f(x) = 3x^2; [0\\le x \\le 1]\\)\n\n\n\n\n\n\n\n\n\n\n\nX and Y are random variable and the joint pdf is, \\(f(x, y) = cx^3y \\\\ 0 \\le x \\le 1, y \\ge 0\\)\n\nFind \\(r_{xy}\\)"
+  },
+  {
+    "objectID": "302.html",
+    "href": "302.html",
+    "title": "B.Stat.-302",
+    "section": "",
+    "text": "Hi"
+  },
+  {
+    "objectID": "301.html#joint-pdf",
+    "href": "301.html#joint-pdf",
+    "title": "B.Stat.-301",
+    "section": "",
+    "text": "X and Y are random variable and the joint pdf is, \\(f(x, y) = cx^3y \\\\ 0 \\le x \\le 1, y \\ge 0\\)\n\nFind \\(r_{xy}\\)"
+  },
+  {
+    "objectID": "301.html#introduction",
+    "href": "301.html#introduction",
+    "title": "B.Stat.-301",
+    "section": "Introduction",
+    "text": "Introduction\nA vector valued random variable \\(X = (x_1, x_2, \\dots, x_p)'\\) is said to have a multivarite normal distribution with mean vector \\(\\mu = (\\mu_1, \\mu_2, \\dots , \\mu_p)'\\) and variance-covariance matrix \\(\\Sigma = \\{\\sigma_{ij}\\}, i, j = 1, 2, \\dots, p\\) if its pdf is defined as, \\[f(X)=\\frac{1}{(2\\Pi)^{\\frac{p}{2}} |\\Sigma |^\\frac{1}{2}} exp\\Big[ -\\frac{1}{2} (X-\\mu)'\\Sigma^{-1} (X-\\mu) \\Big] \\] or, \\[f(X)=(2\\Pi)^{-\\frac{p}{2}} |\\Sigma |^{-\\frac{1}{2}} exp\\Big[ -\\frac{1}{2} (X-\\mu)'\\Sigma^{-1} (X-\\mu) \\Big]\\] \\[-\\infty&lt;x_i&lt;\\infty, -\\infty&lt;\\mu_i &lt; \\infty \\\\ \\sigma_{ij} &gt; 0; i=1, 2, \\dots, p\\]"
+  },
+  {
+    "objectID": "301.html#derivation-of-mnd",
+    "href": "301.html#derivation-of-mnd",
+    "title": "B.Stat.-301",
+    "section": "Derivation of MND",
+    "text": "Derivation of MND"
   }
 ]
