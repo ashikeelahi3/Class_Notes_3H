@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "Class Notes"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: 301.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
