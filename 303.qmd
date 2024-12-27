@@ -1,0 +1,7 @@
+---
+title: "Class Notes"
+format: html
+engine: knitr
+filters:
+  - webr
+---

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<head>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
 
-<meta charset="utf-8" />
-<meta name="generator" content="quarto-1.6.39" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>B.Stat.-301 – Class Notes</title>
+<title>Class Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +22,23 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-<!-- htmldependencies:E3FAD763 -->
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -53,65 +67,66 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="/index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Class Notes</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
-  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="/index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/301.html"> 
-<span class="menu-text">B.Stat.-301</span></a>
+    <a class="nav-link" href="./301.html"> 
+<span class="menu-text">301 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./302.html"> 
+<span class="menu-text">302 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./303.html"> 
+<span class="menu-text">303 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./304.html"> 
+<span class="menu-text">304 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./305.html" aria-current="page"> 
+<span class="menu-text">305 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./306.html"> 
+<span class="menu-text">306 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./307.html"> 
+<span class="menu-text">307 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./308.html"> 
+<span class="menu-text">308 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./309.html"> 
+<span class="menu-text">309 Practical</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -124,15 +139,15 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <div id="quarto-toc-target"></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">B.Stat.-301</h1>
+<h1 class="title">Class Notes</h1>
 </div>
 
 
@@ -148,74 +163,12 @@ window.Quarto = {
 
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#basics" id="toc-basics">Basics</a>
-  <ul>
-  <li><a href="#joint-pdf" id="toc-joint-pdf">Joint PDF</a></li>
-  </ul></li>
-  <li><a href="#multivariate-normal-distribution-mnd" id="toc-multivariate-normal-distribution-mnd">Multivariate Normal Distribution (MND)</a>
-  <ul>
-  <li><a href="#introduction" id="toc-introduction">Introduction</a></li>
-  <li><a href="#derivation-of-mnd" id="toc-derivation-of-mnd">Derivation of MND</a></li>
-  </ul></li>
-  </ul>
-</nav>
-<section id="basics" class="level1">
-<h1>Basics</h1>
-<p>Mean vector <span class="math inline">\(\mu&#39; = (\mu_1 , \mu_2, \dots , \mu_k)&#39;; [k&gt;2]\)</span></p>
-<p><strong>Condition of PDF:</strong></p>
-<ol type="1">
-<li><p><span class="math inline">\(\int_x f(x) dx = 1\)</span></p></li>
-<li><p><span class="math inline">\(f(x) \ge 0\)</span></p></li>
-</ol>
-<p><strong>Condition of PMF:</strong></p>
-<ol type="1">
-<li><p><span class="math inline">\(\sum_x p(x)=1\)</span></p></li>
-<li><p><span class="math inline">\(0\le p(x) \le 1\)</span></p></li>
-</ol>
-<p><strong>Example:</strong></p>
-<p><span class="math inline">\(f(x) = kx^2; [0\le x \le 1]\)</span> is a pdf. Then find k</p>
-<p><strong>Answer:</strong> Thus f(x) is a pdf, <span class="math display">\[\therefore \int_x f(x) dx = 1\]</span> <span class="math display">\[\Rightarrow \int_0^1 kx^2 dx = 1\]</span> <span class="math display">\[\Rightarrow \frac{k}{3} [x^3]_0^1=1\]</span> <span class="math display">\[\Rightarrow \frac{k}{3} \times 1 = 1\]</span> <span class="math display">\[\therefore k = 3\]</span> Therfore, the pdf is <span class="math inline">\(f(x) = 3x^2; [0\le x \le 1]\)</span></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img src="301_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672" /></p>
-</figure>
-</div>
-</div>
-</div>
-<section id="joint-pdf" class="level2">
-<h2>Joint PDF</h2>
-<p><strong>X and Y are random variable and the joint pdf is,</strong> <span class="math inline">\(f(x, y) = cx^3y \\ 0 \le x \le 1, y \ge 0\)</span></p>
-<ol type="1">
-<li><strong>Find</strong> <span class="math inline">\(r_{xy}\)</span></li>
-<li></li>
-</ol>
-</section>
-</section>
-<section id="multivariate-normal-distribution-mnd" class="level1">
-<h1>Multivariate Normal Distribution (MND)</h1>
-<section id="introduction" class="level2">
-<h2>Introduction</h2>
-<p>A vector valued random variable <span class="math inline">\(X = (x_1, x_2, \dots, x_p)&#39;\)</span> is said to have a multivarite normal distribution with mean vector <span class="math inline">\(\mu = (\mu_1, \mu_2, \dots , \mu_p)&#39;\)</span> and variance-covariance matrix <span class="math inline">\(\Sigma = \{\sigma_{ij}\}, i, j = 1, 2, \dots, p\)</span> if its pdf is defined as, <span class="math display">\[f(X)=\frac{1}{(2\Pi)^{\frac{p}{2}} |\Sigma |^\frac{1}{2}} exp\Big[ -\frac{1}{2} (X-\mu)&#39;\Sigma^{-1} (X-\mu) \Big] \]</span> or, <span class="math display">\[f(X)=(2\Pi)^{-\frac{p}{2}} |\Sigma |^{-\frac{1}{2}} exp\Big[ -\frac{1}{2} (X-\mu)&#39;\Sigma^{-1} (X-\mu) \Big]\]</span> <span class="math display">\[-\infty&lt;x_i&lt;\infty, -\infty&lt;\mu_i &lt; \infty \\ \sigma_{ij} &gt; 0; i=1, 2, \dots, p\]</span></p>
-</section>
-<section id="derivation-of-mnd" class="level2">
-<h2>Derivation of MND</h2>
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Class Notes</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">Class Notes</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6SG9tZQ==">Home</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw=">/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Qi5TdGF0Li0zMDE=">B.Stat.-301</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6LzMwMS5odG1s">/301.html</span></p>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">B.Stat.-301 – Class Notes</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">B.Stat.-301 – Class Notes</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">B.Stat.-301 – Class Notes</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Class Notes</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw=="></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj"></span></p>
-</div>
-</section>
-</section>
+
+
+
 
 </main> <!-- /main -->
-<script id = "quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -634,6 +587,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 
-</body>
 
-</html>
+
+
+</body></html>
