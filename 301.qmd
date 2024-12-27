@@ -52,5 +52,7 @@ or, $$f(X)=(2\Pi)^{-\frac{p}{2}} |\Sigma |^{-\frac{1}{2}} exp\Big[ -\frac{1}{2} 
 $$-\infty<x_i<\infty, -\infty<\mu_i < \infty \\ \sigma_{ij} > 0; i=1, 2, \dots, p$$
 
 ## Derivation of MND
-
+For univariate, $$f(x) = \frac{1}{\sqrt{2\pi \sigma^2}} exp\Big[-\frac12 \frac{(x-\mu)^2}{\sigma^2}\Big]$$
+$$\Rightarrow f(x) = k \times  exp\Big[-\frac12 \frac{(x-\mu)(x-\mu)}{\sigma^2}\Big]$$
+$$\Rightarrow f(x) = k \times exp\Big[-\frac12 (x-\mu)' (\sigma^2)^{-1}(x-\mu)\Big]$$
 

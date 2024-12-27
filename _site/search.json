@@ -46,6 +46,6 @@
     "href": "301.html#derivation-of-mnd",
     "title": "B.Stat.-301",
     "section": "Derivation of MND",
-    "text": "Derivation of MND"
+    "text": "Derivation of MND\nFor univariate, \\[f(x) = \\frac{1}{\\sqrt{2\\pi \\sigma^2}} exp\\Big[-\\frac12 \\frac{(x-\\mu)^2}{\\sigma^2}\\Big]\\] \\[\\Rightarrow f(x) = k \\times  exp\\Big[-\\frac12 \\frac{(x-\\mu)(x-\\mu)}{\\sigma^2}\\Big]\\] \\[\\Rightarrow f(x) = k \\times exp\\Big[-\\frac12 (x-\\mu)' (\\sigma^2)^{-1}(x-\\mu)\\Big]\\]"
   }
 ]
