@@ -8,10 +8,29 @@ website:
       - href: index.qmd
         text: Home
       - href: 301.qmd
+        text: 301 Note
+      - href: 302.qmd
+        text: 302 Note
+      - href: 303.qmd
+        text: 303 Note
+      - href: 304.qmd
+        text: 304 Note
+      - href: 305.qmd
+        text: 305 Note
+      - href: 306.qmd
+        text: 306 Note
+      - href: 307.qmd
+        text: 307 Note
+      - href: 308.qmd
+        text: 308 Note
+      - href: 309.qmd
+        text: 309 Practical
+      
 
 format:
   html:
     theme: cosmo
+    dark: cyborg
     css: styles.css
     toc: true
 

@@ -1653,34 +1653,6 @@ globalThis.qwebrExecuteCode = async function (
     <a class="nav-link" href="./302.html"> 
 <span class="menu-text">302 Note</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./303.qmd"> 
-<span class="menu-text">303 Note</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./304.qmd"> 
-<span class="menu-text">304 Note</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./305.qmd"> 
-<span class="menu-text">305 Note</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./306.qmd"> 
-<span class="menu-text">306 Note</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./307.qmd"> 
-<span class="menu-text">307 Note</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./308.qmd"> 
-<span class="menu-text">308 Note</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./309.qmd"> 
-<span class="menu-text">309 Practical</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -1697,19 +1669,7 @@ globalThis.qwebrExecuteCode = async function (
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-class-notes" id="toc-welcome-to-class-notes" class="nav-link active" data-scroll-target="#welcome-to-class-notes">Welcome to Class Notes!</a>
-  <ul class="collapse">
-  <li><a href="#navigation" id="toc-navigation" class="nav-link" data-scroll-target="#navigation">Navigation</a></li>
-  <li><a href="#featured-content" id="toc-featured-content" class="nav-link" data-scroll-target="#featured-content">Featured Content</a>
-  <ul class="collapse">
-  <li><a href="#note-of-the-week-301-note" id="toc-note-of-the-week-301-note" class="nav-link" data-scroll-target="#note-of-the-week-301-note">Note of the Week: 301 Note</a></li>
-  </ul></li>
-  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a>
-  <ul class="collapse">
-  <li><a href="#customization-tips" id="toc-customization-tips" class="nav-link" data-scroll-target="#customization-tips"><strong>Customization Tips</strong></a></li>
-  </ul></li>
-  <li><a href="#r-playground" id="toc-r-playground" class="nav-link" data-scroll-target="#r-playground">R Playground</a></li>
-  </ul></li>
+  <li><a href="#r-playground" id="toc-r-playground" class="nav-link active" data-scroll-target="#r-playground">R Playground</a></li>
   </ul>
 </nav>
     </div>
@@ -2019,49 +1979,12 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<section id="welcome-to-class-notes" class="level1">
-<h1>Welcome to Class Notes!</h1>
-<p>This website contains all your class notes, practicals, and other resources organized for easy access.</p>
-<section id="navigation" class="level2">
-<h2 class="anchored" data-anchor-id="navigation">Navigation</h2>
-<p>Use the navigation bar above to explore notes for each topic:</p>
-<ul>
-<li><strong>301 Note</strong>: Introduction to the basics.</li>
-<li><strong>302 Note</strong>: Advanced topics and applications.</li>
-<li><strong>303 Note</strong>: Problem-solving techniques.</li>
-<li><strong>309 Practical</strong>: Hands-on exercises and examples.</li>
-</ul>
-<hr>
-</section>
-<section id="featured-content" class="level2">
-<h2 class="anchored" data-anchor-id="featured-content">Featured Content</h2>
-<section id="note-of-the-week-301-note" class="level3">
-<h3 class="anchored" data-anchor-id="note-of-the-week-301-note">Note of the Week: 301 Note</h3>
-<p><a href="./301.html"><img src="assets/301-thumbnail.png" class="img-fluid" alt="Read the Note"></a> Dive into the foundational concepts that set the stage for success in this course.</p>
-<hr>
-</section>
-</section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<p>Have questions or suggestions? Reach out to your instructor or classmates for assistance.</p>
-<hr>
-<section id="customization-tips" class="level3">
-<h3 class="anchored" data-anchor-id="customization-tips"><strong>Customization Tips</strong></h3>
-<ul>
-<li>Replace placeholder text with your content.</li>
-<li>Update <code>assets/301-thumbnail.png</code> with the actual image path, or remove it if not needed.</li>
-<li>Add sections for announcements, news, or summaries.</li>
-</ul>
-<p>Would you like to add specific content or features to this page? For example, a recent notes list, images, or embedded videos?</p>
-</section>
-</section>
 <section id="r-playground" class="level2">
 <h2 class="anchored" data-anchor-id="r-playground">R Playground</h2>
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -2155,7 +2078,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/ashikeelahi3\.github\.io\/Class_Notes_3H\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

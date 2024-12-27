@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>B.Stat.-301 – Class Notes</title>
+<title>Multivariate Distribution – Class Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,7 +123,39 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./301.html" aria-current="page"> 
-<span class="menu-text">B.Stat.-301</span></a>
+<span class="menu-text">301 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./302.html"> 
+<span class="menu-text">302 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./303.qmd"> 
+<span class="menu-text">303 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./304.qmd"> 
+<span class="menu-text">304 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./305.qmd"> 
+<span class="menu-text">305 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./306.qmd"> 
+<span class="menu-text">306 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./307.qmd"> 
+<span class="menu-text">307 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./308.qmd"> 
+<span class="menu-text">308 Note</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./309.qmd"> 
+<span class="menu-text">309 Practical</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -158,7 +190,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">B.Stat.-301</h1>
+<h1 class="title">Multivariate Distribution</h1>
 </div>
 
 
@@ -223,7 +255,7 @@ window.Quarto = {
 <p><span class="math display">\[\therefore f(X) = k \times exp\Big[ -\frac12(X-\mu)' \Sigma^{-1} (X-\mu)\Big] ---(2)\]</span> <span class="math display">\[\infty &lt; x_i , \mu_i&lt;\infty; \sigma_{ij} &gt; 0\]</span></p>
 <p>Here, k i sconstant that can be determined by the integration over the range of the components variable.</p>
 <p><span class="math inline">\(f(X)\)</span> is non-negative because <span class="math inline">\(\Sigma^{-1}\)</span> is a positive definite and <span class="math inline">\((X-\mu)'\Sigma^{-1}(X-\mu) \ge 0\)</span></p>
-<p><span class="math display">\[\therefore \int_{-\infty}^{\infty} \dots \int_{-\infty}^{\infty} f(X) dx_1 \dots dx_p = 1 ----(3)\]</span> <span class="math display">\[\Rightarrow \int_{-\infty}^{\infty} \dots \int_{-\infty}^{\infty} k \times exp\Big[ -\frac12(X-\mu)' \Sigma^{-1} (X-\mu)\Big]  dx_1 \dots dx_p = 1\]</span> <span class="math display">\[\Rightarrow \int_{-\infty}^{\infty} \dots \int_{-\infty}^{\infty} exp\Big[ -\frac12(X-\mu)' \Sigma^{-1} (X-\mu)\Big]  dx_1 \dots dx_p = \frac 1k = k^* \text{ (say)} ----(4)\]</span></p>
+<p><span class="math display">\[\therefore \int_{-\infty}^{\infty} \dots \int_{-\infty}^{\infty} f(X) dx_1 \dots dx_p = 1 ----(3)\]</span> <span class="math display">\[\Rightarrow \int_{-\infty}^{\infty} \dots \int_{-\infty}^{\infty} k \times exp\Big[ -\frac12(X-\mu)' \Sigma^{-1} (X-\mu)\Big]  dx_1 \dots dx_p = 1\]</span> <span class="math display">\[\Rightarrow \int_{-\infty}^{\infty} \dots \int_{-\infty}^{\infty} exp\Big[ -\frac12(X-\mu)' \Sigma^{-1} (X-\mu)\Big]  dx_1 \dots dx_p = \frac 1k = k^* \text{ (say)} \]</span> <span class="math inline">\(----(4)\)</span></p>
 <p>We use the fact that if <span class="math inline">\(\Sigma^{-1}\)</span> is a positive definite, then there exists a non-singular matrix C such that, <span class="math inline">\(C'\Sigma^{-1}C=I ----(5)\)</span></p>
 <p>Now, let <span class="math inline">\(X-\mu = CY\)</span>, where <span class="math inline">\(Y=\begin{bmatrix} y_1 \\ y_2 \\ \dots \\ y_p \end{bmatrix}\)</span>,<span class="math inline">\(Y'Y = \begin{bmatrix} y_1 &amp; y_2 &amp; \dots &amp; y_p \end{bmatrix} \begin{bmatrix} y_1 \\ y_2 \\ \dots \\ y_p \end{bmatrix} = \sum y_i^2\)</span></p>
 <p><span class="math inline">\(\therefore dX = |C|dY\)</span></p>
