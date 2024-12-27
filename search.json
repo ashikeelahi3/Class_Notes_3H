@@ -4,7 +4,14 @@
     "href": "index.html",
     "title": "Class Notes",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#r-playground",
+    "href": "index.html#r-playground",
+    "title": "Class Notes",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "302.html",
@@ -16,28 +23,28 @@
   {
     "objectID": "301.html",
     "href": "301.html",
-    "title": "B.Stat.-301",
+    "title": "Multivariate Distribution",
     "section": "",
     "text": "Mean vector \\(\\mu' = (\\mu_1 , \\mu_2, \\dots , \\mu_k)'; [k&gt;2]\\)\nCondition of PDF:\n\n\\(\\int_x f(x) dx = 1\\)\n\\(f(x) \\ge 0\\)\n\nCondition of PMF:\n\n\\(\\sum_x p(x)=1\\)\n\\(0\\le p(x) \\le 1\\)\n\nExample:\n\\(f(x) = kx^2; [0\\le x \\le 1]\\) is a pdf. Then find k\nAnswer: Thus f(x) is a pdf, \\[\\therefore \\int_x f(x) dx = 1\\] \\[\\Rightarrow \\int_0^1 kx^2 dx = 1\\] \\[\\Rightarrow \\frac{k}{3} [x^3]_0^1=1\\] \\[\\Rightarrow \\frac{k}{3} \\times 1 = 1\\] \\[\\therefore k = 3\\] Therfore, the pdf is \\(f(x) = 3x^2; [0\\le x \\le 1]\\)\n\n\n\n\n\n\n\n\n\n\n\nX and Y are random variable and the joint pdf is, \\(f(x, y) = cx^3y \\\\ 0 \\le x \\le 1, y \\ge 0\\)\n\nFind \\(r_{xy}\\)"
   },
   {
     "objectID": "301.html#joint-pdf",
     "href": "301.html#joint-pdf",
-    "title": "B.Stat.-301",
+    "title": "Multivariate Distribution",
     "section": "",
     "text": "X and Y are random variable and the joint pdf is, \\(f(x, y) = cx^3y \\\\ 0 \\le x \\le 1, y \\ge 0\\)\n\nFind \\(r_{xy}\\)"
   },
   {
     "objectID": "301.html#introduction",
     "href": "301.html#introduction",
-    "title": "B.Stat.-301",
+    "title": "Multivariate Distribution",
     "section": "Introduction",
     "text": "Introduction\nA vector valued random variable \\(X = (x_1, x_2, \\dots, x_p)'\\) is said to have a multivarite normal distribution with mean vector \\(\\mu = (\\mu_1, \\mu_2, \\dots , \\mu_p)'\\) and variance-covariance matrix \\(\\Sigma = \\{\\sigma_{ij}\\}, i, j = 1, 2, \\dots, p\\) if its pdf is defined as, \\[f(X)=\\frac{1}{(2\\Pi)^{\\frac{p}{2}} |\\Sigma |^\\frac{1}{2}} exp\\Big[ -\\frac{1}{2} (X-\\mu)'\\Sigma^{-1} (X-\\mu) \\Big] \\] or, \\[f(X)=(2\\Pi)^{-\\frac{p}{2}} |\\Sigma |^{-\\frac{1}{2}} exp\\Big[ -\\frac{1}{2} (X-\\mu)'\\Sigma^{-1} (X-\\mu) \\Big] ----(1)\\] \\[-\\infty&lt;x_i&lt;\\infty, -\\infty&lt;\\mu_i &lt; \\infty \\\\ \\sigma_{ij} &gt; 0; i=1, 2, \\dots, p\\]"
   },
   {
     "objectID": "301.html#derivation-of-mnd",
     "href": "301.html#derivation-of-mnd",
-    "title": "B.Stat.-301",
+    "title": "Multivariate Distribution",
     "section": "Derivation of MND",
     "text": "Derivation of MND\nFor univariate, \\[f(x) = \\frac{1}{\\sqrt{2\\pi \\sigma^2}} exp\\Big[-\\frac12 \\frac{(x-\\mu)^2}{\\sigma^2}\\Big]\\] \\[\\Rightarrow f(x) = k \\times  exp\\Big[-\\frac12 \\frac{(x-\\mu)(x-\\mu)}{\\sigma^2}\\Big]\\] \\[\\Rightarrow f(x) = k \\times exp\\Big[-\\frac12 (x-\\mu)' (\\sigma^2)^{-1}(x-\\mu)\\Big]\\]\nNow, for p component multivarite case, we have, \\(X=(x_1, x_2, \\dots, x_p)'= \\begin{bmatrix} x_1 \\\\ x_2 \\\\ \\dots \\\\ x_p \\end{bmatrix}, \\mu=\\begin{bmatrix} \\mu_1 \\\\ \\mu_2 \\\\ \\dots \\\\ \\mu_p \\end{bmatrix}\\)\nand \\(\\sigma^2\\) is replaced by \\(\\Sigma = \\begin{bmatrix} \\sigma_{11} & \\sigma_{12} & \\dots & \\sigma_{1p} \\\\ \\sigma_{21} & \\sigma_{22} & \\dots & \\sigma_{2p} \\\\ \\dots & \\dots & \\dots & \\dots \\\\ \\sigma_{p1} & \\sigma_{p_2} & \\dots & \\sigma_{pp} \\end{bmatrix}\\)\n\\[\\therefore f(X) = k \\times exp\\Big[ -\\frac12(X-\\mu)' \\Sigma^{-1} (X-\\mu)\\Big] ---(2)\\] \\[\\infty &lt; x_i , \\mu_i&lt;\\infty; \\sigma_{ij} &gt; 0\\]\nHere, k i sconstant that can be determined by the integration over the range of the components variable.\n\\(f(X)\\) is non-negative because \\(\\Sigma^{-1}\\) is a positive definite and \\((X-\\mu)'\\Sigma^{-1}(X-\\mu) \\ge 0\\)\n\\[\\therefore \\int_{-\\infty}^{\\infty} \\dots \\int_{-\\infty}^{\\infty} f(X) dx_1 \\dots dx_p = 1 ----(3)\\] \\[\\Rightarrow \\int_{-\\infty}^{\\infty} \\dots \\int_{-\\infty}^{\\infty} k \\times exp\\Big[ -\\frac12(X-\\mu)' \\Sigma^{-1} (X-\\mu)\\Big]  dx_1 \\dots dx_p = 1\\] \\[\\Rightarrow \\int_{-\\infty}^{\\infty} \\dots \\int_{-\\infty}^{\\infty} exp\\Big[ -\\frac12(X-\\mu)' \\Sigma^{-1} (X-\\mu)\\Big]  dx_1 \\dots dx_p = \\frac 1k = k^* \\text{ (say)} \\] \\(----(4)\\)\nWe use the fact that if \\(\\Sigma^{-1}\\) is a positive definite, then there exists a non-singular matrix C such that, \\(C'\\Sigma^{-1}C=I ----(5)\\)\nNow, let \\(X-\\mu = CY\\), where \\(Y=\\begin{bmatrix} y_1 \\\\ y_2 \\\\ \\dots \\\\ y_p \\end{bmatrix}\\),\\(Y'Y = \\begin{bmatrix} y_1 & y_2 & \\dots & y_p \\end{bmatrix} \\begin{bmatrix} y_1 \\\\ y_2 \\\\ \\dots \\\\ y_p \\end{bmatrix} = \\sum y_i^2\\)\n\\(\\therefore dX = |C|dY\\)\nThen, \\((X-\\mu)' \\Sigma^{-1} (X-\\mu) = Y'C'\\Sigma^{-1}CY = Y'IY=Y'Y = \\sum_{i=1}^p y_i^2\\)\nAnd the Jacobian transformation \\(J = mod|C|\\)"
   },
