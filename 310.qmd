@@ -5,4 +5,85 @@ engine: knitr
 filters:
   - webr
 ---
-310
+
+# Basics
+
+# Session 1: Multivariate Distribution
+## Topics
+1. Fitting of Multivariate Normal Distribution
+2. Fitting of Non-central $\chi^2$, t and F distribution with their properties
+3. Fitting of Hotelling's $T^2$, Wishart distribution and Multivariate t-distribution
+4. Fitting of Multivariate Mixture Distributions: Mixture of multivariate normal distributions and its properties, Mixture of multivariate t-distributions and its properties. 
+
+## R Programming Practice
+### Problem 1
+```{webr-r}
+####problem 1
+
+###a
+
+library(mvtnorm)
+n=1000
+mu=c(11,8,12,19,20)
+sigma=matrix(c(6,4,3,2,1,4,5,4,3,2,3,4,7,4,3,2,3,4,9,4,1,2,3,4,4),nrow = 5)
+sample.data=rmvnorm(n,mu,sigma)
+# sim.data
+
+
+######b
+
+colnames(sample.data)=paste0("x",1:5) 
+head(sample.data)
+par(mfrow=c(2,3))
+boxplot(sample.data)
+
+for(i in 1:5) {
+  hist(sample.data[, i],probability = T, col=heat.colors(10), main=paste0("Histogram with sample.data[ ,",i, "]" ))
+  lines(density(sample.data[,i]))
+}
+```
+
+## Question Solving 2021
+
+## Question Solving 2022
+
+### Problem 1
+$\mu = \begin{bmatrix} 5 \\ 1 \\3 \\ 7 \\0 \end{bmatrix}$ and $\Sigma=\begin{bmatrix} 6 & 4 & 0 & 0 & 0 \\ 4 & 5 & 0 & 0 & 0\\ 0&0& 8&4&3\\ 0 & 0 & 4 & 9 & 4 \\ 0 & 0 & 3 & 4 & 4 \end{bmatrix}$ 
+
+a. Generate 1500 random sample
+b. Draw box plot and marginal pdf of $f(x_i), i=1, 2, \dots, 5$
+c. Find $\hat \mu, \hat \Sigma$ using MLE
+d. Find RMSE
+
+```{webr-r}
+###a
+library(mvtnorm)
+mu=c(5,1,3,7,0)
+sigma=matrix(c(6,4,0,0,0,4,5,0,0,0,0,0,7,4,3,0,0,4,9,4,0,0,3,4,4),nrow=5)
+sample.data=rmvnorm(1500,mu,sigma)
+
+###b
+colnames(sample.data)= paste0("x", 1:5)
+head(sample.data)
+par(mfrow=c(2,3))
+boxplot(sample.data)
+for(i in 1:5){
+  hist(sample.data[, i],probability = T, col=heat.colors(10), main=paste0("Histogram with sample.data[ ,",i, "]" ))
+  lines(density(sample.data[,i]))
+}
+```
+
+# Session 2: Estimation
+
+# Session 3: Hypothesis Testing
+
+# Session 4: Advanced Regression
+
+# Session 5: Stochastic Processes and Actuarial Models
+
+# Session 6: Sampling Techniques
+
+# Session 7: Simulation and Modeling
+
+
+
