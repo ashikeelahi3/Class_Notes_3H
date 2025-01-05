@@ -7,11 +7,39 @@
     "text": "This website contains all your class notes, practicals, and other resources organized for easy access.\n\n\nUse the navigation bar above to explore notes for each topic:\n\n301 Note: Introduction to the basics.\n302 Note: Advanced topics and applications.\n303 Note: Problem-solving techniques.\n309 Practical: Hands-on exercises and examples.\n\n\n\n\n\n\n\n Dive into the foundational concepts that set the stage for success in this course.\n\n\n\n\n\nHave questions or suggestions? Reach out to your instructor or classmates for assistance.\n\n\n\n\nReplace placeholder text with your content.\nUpdate assets/301-thumbnail.png with the actual image path, or remove it if not needed.\nAdd sections for announcements, news, or summaries.\n\nWould you like to add specific content or features to this page? For example, a recent notes list, images, or embedded videos?\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
+    "objectID": "index.html#navigation",
+    "href": "index.html#navigation",
+    "title": "Class Notes",
+    "section": "",
+    "text": "Use the navigation bar above to explore notes for each topic:\n\n301 Note: Introduction to the basics.\n302 Note: Advanced topics and applications.\n303 Note: Problem-solving techniques.\n309 Practical: Hands-on exercises and examples."
+  },
+  {
+    "objectID": "index.html#featured-content",
+    "href": "index.html#featured-content",
+    "title": "Class Notes",
+    "section": "",
+    "text": "Dive into the foundational concepts that set the stage for success in this course."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Class Notes",
+    "section": "",
+    "text": "Have questions or suggestions? Reach out to your instructor or classmates for assistance.\n\n\n\n\nReplace placeholder text with your content.\nUpdate assets/301-thumbnail.png with the actual image path, or remove it if not needed.\nAdd sections for announcements, news, or summaries.\n\nWould you like to add specific content or features to this page? For example, a recent notes list, images, or embedded videos?"
+  },
+  {
     "objectID": "index.html#r-playground",
     "href": "index.html#r-playground",
     "title": "Class Notes",
     "section": "",
     "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "310.html",
+    "href": "310.html",
+    "title": "Class Notes",
+    "section": "",
+    "text": "310"
   },
   {
     "objectID": "302.html",
@@ -56,31 +84,66 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "index.html#navigation",
-    "href": "index.html#navigation",
+    "objectID": "310.html#topics",
+    "href": "310.html#topics",
     "title": "Class Notes",
-    "section": "",
-    "text": "Use the navigation bar above to explore notes for each topic:\n\n301 Note: Introduction to the basics.\n302 Note: Advanced topics and applications.\n303 Note: Problem-solving techniques.\n309 Practical: Hands-on exercises and examples."
+    "section": "Topics",
+    "text": "Topics\n\nFitting of Multivariate Normal Distribution\nFitting of Non-central \\(\\chi^2\\), t and F distribution with their properties\nFitting of Hotelling’s \\(T^2\\), Wishart distribution and Multivariate t-distribution\nFitting of Multivariate Mixture Distributions: Mixture of multivariate normal distributions and its properties, Mixture of multivariate t-distributions and its properties."
   },
   {
-    "objectID": "index.html#featured-content",
-    "href": "index.html#featured-content",
+    "objectID": "310.html#r-programming",
+    "href": "310.html#r-programming",
     "title": "Class Notes",
-    "section": "",
-    "text": "Dive into the foundational concepts that set the stage for success in this course."
+    "section": "R Programming",
+    "text": "R Programming\n\nProblem 1\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
+    "objectID": "310.html#r-programming-practice",
+    "href": "310.html#r-programming-practice",
     "title": "Class Notes",
-    "section": "",
-    "text": "Have questions or suggestions? Reach out to your instructor or classmates for assistance.\n\n\n\n\nReplace placeholder text with your content.\nUpdate assets/301-thumbnail.png with the actual image path, or remove it if not needed.\nAdd sections for announcements, news, or summaries.\n\nWould you like to add specific content or features to this page? For example, a recent notes list, images, or embedded videos?"
+    "section": "R Programming Practice",
+    "text": "R Programming Practice\n\nProblem 1\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "310.html",
-    "href": "310.html",
+    "objectID": "310.html#question-solving-2021",
+    "href": "310.html#question-solving-2021",
     "title": "Class Notes",
+    "section": "Question Solving 2021",
+    "text": "Question Solving 2021"
+  },
+  {
+    "objectID": "310.html#question-solving-2022",
+    "href": "310.html#question-solving-2022",
+    "title": "Class Notes",
+    "section": "Question Solving 2022",
+    "text": "Question Solving 2022\n\nProblem 1\n\\(\\mu = \\begin{bmatrix} 5 \\\\ 1 \\\\3 \\\\ 7 \\\\0 \\end{bmatrix}\\) and \\(\\Sigma=\\begin{bmatrix} 6 & 4 & 0 & 0 & 0 \\\\ 4 & 5 & 0 & 0 & 0\\\\ 0&0& 8&4&3\\\\ 0 & 0 & 4 & 9 & 4 \\\\ 0 & 0 & 3 & 4 & 4 \\end{bmatrix}\\)\n\nGenerate 1500 random sample\nDraw box plot and marginal pdf of \\(f(x_i), i=1, 2, \\dots, 5\\)\nFind \\(\\hat \\mu, \\hat \\Sigma\\) using MLE\nFind RMSE\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "305.html",
+    "href": "305.html",
+    "title": "B.Stat.-307: Complex Variables and Transformation",
     "section": "",
-    "text": "310"
+    "text": "Number: A number is a mathematical objects used to count, measure and also label. The original examples are the natural numbers 1, 2, 3, 4 and so on. A notational symbol that represents a number is called a numeral. In addition, to their use in counting and measuring, numerals are often used for labels (as with telephone numbers), for ordering (as with serial numbers) and for codes (as with ISBNs).\n\n\n\nComplex number: A complex number is a number that can be expressed in the form \\(a+ib\\), where a and b are real numbers and i is the imaginary unit satisfying the property that \\(i^2 = -1\\).\nIf \\(z=a+ib\\), then a is called real part and b is called the imaginary part of z, which are denoted by \\(Re\\{z\\}\\) and \\(Im\\{z\\}\\) respectively.\nExample: 1. \\(2+5i\\), where \\(a=2,b=5\\) 2. \\(3-i\\), where \\(a=3,b=-1\\)\nHere, 1 and 2 are complex numbers because they can be expressed in the form \\(a+ib\\).\n\n\n\nComplex Variable: If \\(z=a+ib\\) is a complex number satisfying \\(i^2=-1\\), then a is called real part of z and b is called imaginary part of z, which are denoted by \\(Re\\{z\\}\\) and \\(Im\\{z\\}\\) respectively.\nThe symbol z, which can stand for any complex number, is a complex variable.\nExample: \\(z_1 = 2+3i\\) and \\(z_2=5-3i\\) Here, \\(z_1\\) and \\(z_2\\) are complex number.\n\n\n\n\n\n\n\n\n\n\n\n\nReal Numbers: All numbers which are situated on straight line are called real numbers. The set of real numbers is denoted by \\(\\mathbb{R}\\) and defined as,\n\\[\\mathbb{R} = \\{\\text{ Set of Real Numbers }\\} = \\{\\mathbb{Q} \\cup \\mathbb{Q}' \\}\\]\nReal Line: All the numbers positive or negative, rational or irrational can be represented on a straight line, say the axis of x which is called real line.\n\n\n\n\n\n\\[\\mathbb{Q} = \\{\\text{ Set of Rational Numbers }\\}\\] \\[\\mathbb{Z} = \\{\\text{ Set of Integer Numbers }\\}\\] \\[\\mathbb{N} = \\{\\text{ Set of Natural Numbers }\\}\\] \\[\\mathbb{R} = \\{\\text{ Set of Real Numbers }\\}\\] \\[\\mathbb{C} = \\{\\text{ Set of Real Numbers }\\}\\]\n\\[\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}\\subset \\mathbb{C}\\]"
+  },
+  {
+    "objectID": "305.html#number-and-complex-number",
+    "href": "305.html#number-and-complex-number",
+    "title": "B.Stat.-307: Complex Variables and Transformation",
+    "section": "",
+    "text": "Number: A number is a mathematical objects used to count, measure and also label. The original examples are the natural numbers 1, 2, 3, 4 and so on. A notational symbol that represents a number is called a numeral. In addition, to their use in counting and measuring, numerals are often used for labels (as with telephone numbers), for ordering (as with serial numbers) and for codes (as with ISBNs).\n\n\n\nComplex number: A complex number is a number that can be expressed in the form \\(a+ib\\), where a and b are real numbers and i is the imaginary unit satisfying the property that \\(i^2 = -1\\).\nIf \\(z=a+ib\\), then a is called real part and b is called the imaginary part of z, which are denoted by \\(Re\\{z\\}\\) and \\(Im\\{z\\}\\) respectively.\nExample: 1. \\(2+5i\\), where \\(a=2,b=5\\) 2. \\(3-i\\), where \\(a=3,b=-1\\)\nHere, 1 and 2 are complex numbers because they can be expressed in the form \\(a+ib\\).\n\n\n\nComplex Variable: If \\(z=a+ib\\) is a complex number satisfying \\(i^2=-1\\), then a is called real part of z and b is called imaginary part of z, which are denoted by \\(Re\\{z\\}\\) and \\(Im\\{z\\}\\) respectively.\nThe symbol z, which can stand for any complex number, is a complex variable.\nExample: \\(z_1 = 2+3i\\) and \\(z_2=5-3i\\) Here, \\(z_1\\) and \\(z_2\\) are complex number."
+  },
+  {
+    "objectID": "305.html#line-diagram-of-a-complex-number-system",
+    "href": "305.html#line-diagram-of-a-complex-number-system",
+    "title": "B.Stat.-307: Complex Variables and Transformation",
+    "section": "",
+    "text": "\\[\\mathbb{Q} = \\{\\text{ Set of Rational Numbers }\\}\\] \\[\\mathbb{Z} = \\{\\text{ Set of Integer Numbers }\\}\\] \\[\\mathbb{N} = \\{\\text{ Set of Natural Numbers }\\}\\] \\[\\mathbb{R} = \\{\\text{ Set of Real Numbers }\\}\\] \\[\\mathbb{C} = \\{\\text{ Set of Real Numbers }\\}\\]\n\\[\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}\\subset \\mathbb{C}\\]"
+  },
+  {
+    "objectID": "305.html#real-number",
+    "href": "305.html#real-number",
+    "title": "B.Stat.-307: Complex Variables and Transformation",
+    "section": "",
+    "text": "Real Numbers: All numbers which are situated on straight line are called real numbers. The set of real numbers is denoted by \\(\\mathbb{R}\\) and defined as,\n\\[\\mathbb{R} = \\{\\text{ Set of Real Numbers }\\} = \\{\\mathbb{Q} \\cup \\mathbb{Q}' \\}\\]\nReal Line: All the numbers positive or negative, rational or irrational can be represented on a straight line, say the axis of x which is called real line.\n\n\n\n\n\n\\[\\mathbb{Q} = \\{\\text{ Set of Rational Numbers }\\}\\] \\[\\mathbb{Z} = \\{\\text{ Set of Integer Numbers }\\}\\] \\[\\mathbb{N} = \\{\\text{ Set of Natural Numbers }\\}\\] \\[\\mathbb{R} = \\{\\text{ Set of Real Numbers }\\}\\] \\[\\mathbb{C} = \\{\\text{ Set of Real Numbers }\\}\\]\n\\[\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}\\subset \\mathbb{C}\\]"
   }
 ]
