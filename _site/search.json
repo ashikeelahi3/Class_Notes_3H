@@ -105,27 +105,6 @@
     "text": "Variable: Values varies form Individual to individual.\nExperiment: Repeation fo an event is called experiment.\nRandom Variable: Random variable is a variable that associate to probability. Random variable is an stochastic variable.\nStichastic Processes: Stochastic process or random process is a collection of random variables orderd by an index set. Let \\(X_0, X_1, X_2, \\dots;\\) be a set of random variables; that form a stochastic process ordered by the discrete index set \\(\\{1, 2, 3, \\dots\\}\\).\nNotation: For discrete index set, \\(\\{X_n:n=0,1,2,\\dots\\}\\) and \\(\\{Y_t:t\\geq0\\}\\) with continuous index set \\(\\{t:t\\geq0\\}\\).\nBivariate: Discrete and Continuous (i) Discrete time, Discrete state space (DD) (ii) Discrete time, Continuous state space (DC) (iii) Continuous time, Discrete state space (CD) (iv) Continuous time, Continuous state space (CC)"
   },
   {
-    "objectID": "305.html#number-and-complex-number",
-    "href": "305.html#number-and-complex-number",
-    "title": "B.Stat.-307: Complex Variables and Transformation",
-    "section": "",
-    "text": "Number: A number is a mathematical objects used to count, measure and also label. The original examples are the natural numbers 1, 2, 3, 4 and so on. A notational symbol that represents a number is called a numeral. In addition, to their use in counting and measuring, numerals are often used for labels (as with telephone numbers), for ordering (as with serial numbers) and for codes (as with ISBNs).\n\n\n\nComplex number: A complex number is a number that can be expressed in the form \\(a+ib\\), where a and b are real numbers and i is the imaginary unit satisfying the property that \\(i^2 = -1\\).\nIf \\(z=a+ib\\), then a is called real part and b is called the imaginary part of z, which are denoted by \\(Re\\{z\\}\\) and \\(Im\\{z\\}\\) respectively.\nExample: 1. \\(2+5i\\), where \\(a=2,b=5\\) 2. \\(3-i\\), where \\(a=3,b=-1\\)\nHere, 1 and 2 are complex numbers because they can be expressed in the form \\(a+ib\\).\n\n\n\nComplex Variable: If \\(z=a+ib\\) is a complex number satisfying \\(i^2=-1\\), then a is called real part of z and b is called imaginary part of z, which are denoted by \\(Re\\{z\\}\\) and \\(Im\\{z\\}\\) respectively.\nThe symbol z, which can stand for any complex number, is a complex variable.\nExample: \\(z_1 = 2+3i\\) and \\(z_2=5-3i\\) Here, \\(z_1\\) and \\(z_2\\) are complex number."
-  },
-  {
-    "objectID": "305.html#real-number",
-    "href": "305.html#real-number",
-    "title": "B.Stat.-307: Complex Variables and Transformation",
-    "section": "",
-    "text": "Real Numbers: All numbers which are situated on straight line are called real numbers. The set of real numbers is denoted by \\(\\mathbb{R}\\) and defined as,\n\\[\\mathbb{R} = \\{\\text{ Set of Real Numbers }\\} = \\{\\mathbb{Q} \\cup \\mathbb{Q}' \\}\\]\nReal Line: All the numbers positive or negative, rational or irrational can be represented on a straight line, say the axis of x which is called real line.\n\n\n\n\n\n\n\n\nCommutative: \\(a+b = b+a\\), \\(ab = ba\\)\nAssociative: \\((a+b)+c=a+(b+c)\\), \\((ab)c=a(bc)\\)\nDistributive: \\(a(b+c) = ab + ac\\), \\((a+b)c=ac+bc\\)\nIdentity: \\(a+0=a\\), \\(0+a=a\\), \\(a\\cdot1=a\\), \\(1\\cdot a = a\\)\n\n\\[\\mathbb{Q} = \\{\\text{ Set of Rational Numbers }\\}\\] \\[\\mathbb{Z} = \\{\\text{ Set of Integer Numbers }\\}\\] \\[\\mathbb{N} = \\{\\text{ Set of Natural Numbers }\\}\\] \\[\\mathbb{R} = \\{\\text{ Set of Real Numbers }\\}\\] \\[\\mathbb{C} = \\{\\text{ Set of Real Numbers }\\}\\]\n\\[\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}\\subset \\mathbb{C}\\]"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "305.html#probability-generating-function-pgf",
     "href": "305.html#probability-generating-function-pgf",
     "title": "B.Stat.-305: Stochastic Processes and Acturial Models",
@@ -138,5 +117,12 @@
     "title": "B.Stat.-305: Stochastic Processes and Acturial Models",
     "section": "Binomial Distribution",
     "text": "Binomial Distribution\n\\(p(x) = {n\\choose x} p^x (1-p)^{n-x}; x = 0, 1, 2, \\dots , n\\)\n\\(p(s) = \\sum_{k=0}^n p_{k} s^k\\)$\n\\(=p_0 s^0 + p_1 s^1 +p_2 s^2 + \\dots + p_n s^n\\)\n\\(={n \\choose 0} p^0q^{n-0}s^0 + {n \\choose 1} p^1q^{n-1}s^1 +{n \\choose 2} p^2q^{n-2}s^2+ \\dots + {n \\choose n} p^nq^{0}s^n\\)\n\\(\\therefore p(s)=(q+ps)^n\\)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
