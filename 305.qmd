@@ -1,51 +1,51 @@
 ---
-title: "B.Stat.-307: Complex Variables and Transformation"
+title: "B.Stat.-305: Stochastic Processes and Acturial Models"
 format: html
 engine: knitr
 filters:
   - webr
 ---
 
-# Complex Numbers
+# Basics
 
-## Number and Complex Number
+**Variable:** Values varies form Individual to individual.
 
-### Number
+**Experiment:** Repeation fo an event is called experiment.
 
-**Number:** A number is a mathematical objects used to count, measure and also label. The original examples are the natural numbers 1, 2, 3, 4 and so on. A notational symbol that represents a number is called a numeral. In addition, to their use in counting and measuring, numerals are often used for labels (as with telephone numbers), for ordering (as with serial numbers) and for codes (as with ISBNs).
+**Random Variable:** Random variable is a variable that associate to probability. Random variable is an stochastic variable.
 
-### Complex Number
+**Stichastic Processes:** **Stochastic process** or **random process** is a collection of random variables **orderd** by an index set. Let $X_0, X_1, X_2, \dots;$ be a set of random variables; that form a stochastic process ordered by the discrete index set $\{1, 2, 3, \dots\}$.
 
-**Complex number:** A complex number is a number that can be expressed in the form $a+ib$, where `a` and `b` are real numbers and `i` is the imaginary unit satisfying the property that $i^2 = -1$.
+Notation: For discrete index set, $\{X_n:n=0,1,2,\dots\}$ and $\{Y_t:t\geq0\}$ with continuous index set $\{t:t\geq0\}$.
 
-If $z=a+ib$, then `a` is called real part and `b` is called the imaginary part of `z`, which are denoted by $Re\{z\}$ and $Im\{z\}$ respectively.
+**Bivariate: Discrete and Continuous** (i) Discrete time, Discrete state space (DD) (ii) Discrete time, Continuous state space (DC) (iii) Continuous time, Discrete state space (CD) (iv) Continuous time, Continuous state space (CC)
 
-**Example:** 1. $2+5i$, where $a=2,b=5$ 2. $3-i$, where $a=3,b=-1$
+# Probability Generating Function (p.g.f)
 
-Here, 1 and 2 are complex numbers because they can be expressed in the form $a+ib$.
+**For two coin:** TT, TH, HT, HH
 
-### Complex Variable
+|                    |            |            |            |       |
+|--------------------|:----------:|:----------:|:----------:|:-----:|
+| No of Success $X$  |     0      |     1      |     2      | Total |
+| Probability $p(x)$ | $\frac 14$ | $\frac 12$ | $\frac 14$ |  $1$  |
+|                    |   $p_0$    |   $p_1$    |   $p_2$    |       |
 
-**Complex Variable:** If $z=a+ib$ is a complex number satisfying $i^2=-1$, then `a` is called real part of `z` and `b` is called imaginary part of `z`, which are denoted by $Re\{z\}$ and $Im\{z\}$ respectively.
+## Probability Generating Function (pgf)
 
-The symbol `z`, which can stand for any complex number, is a complex variable.
+$p_0$ = { No head }
 
-**Example:** $z_1 = 2+3i$ and $z_2=5-3i$ Here, $z_1$ and $z_2$ are complex number.
+$p_1$ = { One head }
 
-## Line diagram of a complex number system:
+$p_2 = Pr\{x=2\}$ = { Both are Head }
 
-![](images/clipboard-464886977.png){fig-align="center" width="407"}
+## Binomial Distribution
 
-## Real Number
+$p(x) = {n\choose x} p^x (1-p)^{n-x}; x = 0, 1, 2, \dots , n$
 
-**Real Numbers:** All numbers which are situated on straight line are called real numbers. The set of real numbers is denoted by $\mathbb{R}$ and defined as,
+$p(s) = \sum_{k=0}^n p_{k} s^k$$
 
-$$\mathbb{R} = \{\text{ Set of Real Numbers }\} = \{\mathbb{Q} \cup \mathbb{Q}' \}$$
+$=p_0 s^0 + p_1 s^1 +p_2 s^2 + \dots + p_n s^n$
 
-**Real Line:** All the numbers positive or negative, rational or irrational can be represented on a straight line, say the axis of x which is called real line.
+$={n \choose 0} p^0q^{n-0}s^0 + {n \choose 1} p^1q^{n-1}s^1 +{n \choose 2} p^2q^{n-2}s^2+ \dots + {n \choose n} p^nq^{0}s^n$
 
-![](images/clipboard-849242267.png){fig-align="center"}
-
-$$\mathbb{Q} = \{\text{ Set of Rational Numbers }\}$$ $$\mathbb{Z} = \{\text{ Set of Integer Numbers }\}$$ $$\mathbb{N} = \{\text{ Set of Natural Numbers }\}$$ $$\mathbb{R} = \{\text{ Set of Real Numbers }\}$$ $$\mathbb{C} = \{\text{ Set of Real Numbers }\}$$
-
-$$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}\subset \mathbb{C}$$
+$\therefore p(s)=(q+ps)^n$

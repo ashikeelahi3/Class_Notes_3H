@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>B.Stat.-307: Complex Variables and Transformation – Class Notes</title>
+<title>B.Stat.-305: Stochastic Processes and Acturial Models – Class Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -173,16 +173,11 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#complex-numbers" id="toc-complex-numbers" class="nav-link active" data-scroll-target="#complex-numbers">Complex Numbers</a>
+  <li><a href="#basics" id="toc-basics" class="nav-link active" data-scroll-target="#basics">Basics</a></li>
+  <li><a href="#probability-generating-function-p.g.f" id="toc-probability-generating-function-p.g.f" class="nav-link" data-scroll-target="#probability-generating-function-p.g.f">Probability Generating Function (p.g.f)</a>
   <ul class="collapse">
-  <li><a href="#number-and-complex-number" id="toc-number-and-complex-number" class="nav-link" data-scroll-target="#number-and-complex-number">Number and Complex Number</a>
-  <ul class="collapse">
-  <li><a href="#number" id="toc-number" class="nav-link" data-scroll-target="#number">Number</a></li>
-  <li><a href="#complex-number" id="toc-complex-number" class="nav-link" data-scroll-target="#complex-number">Complex Number</a></li>
-  <li><a href="#complex-variable" id="toc-complex-variable" class="nav-link" data-scroll-target="#complex-variable">Complex Variable</a></li>
-  </ul></li>
-  <li><a href="#line-diagram-of-a-complex-number-system" id="toc-line-diagram-of-a-complex-number-system" class="nav-link" data-scroll-target="#line-diagram-of-a-complex-number-system">Line diagram of a complex number system:</a></li>
-  <li><a href="#real-number" id="toc-real-number" class="nav-link" data-scroll-target="#real-number">Real Number</a></li>
+  <li><a href="#probability-generating-function-pgf" id="toc-probability-generating-function-pgf" class="nav-link" data-scroll-target="#probability-generating-function-pgf">Probability Generating Function (pgf)</a></li>
+  <li><a href="#binomial-distribution" id="toc-binomial-distribution" class="nav-link" data-scroll-target="#binomial-distribution">Binomial Distribution</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -192,7 +187,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">B.Stat.-307: Complex Variables and Transformation</h1>
+<h1 class="title">B.Stat.-305: Stochastic Processes and Acturial Models</h1>
 </div>
 
 
@@ -209,48 +204,56 @@ window.Quarto = {
 </header>
 
 
-<section id="complex-numbers" class="level1">
-<h1>Complex Numbers</h1>
-<section id="number-and-complex-number" class="level2">
-<h2 class="anchored" data-anchor-id="number-and-complex-number">Number and Complex Number</h2>
-<section id="number" class="level3">
-<h3 class="anchored" data-anchor-id="number">Number</h3>
-<p><strong>Number:</strong> A number is a mathematical objects used to count, measure and also label. The original examples are the natural numbers 1, 2, 3, 4 and so on. A notational symbol that represents a number is called a numeral. In addition, to their use in counting and measuring, numerals are often used for labels (as with telephone numbers), for ordering (as with serial numbers) and for codes (as with ISBNs).</p>
+<section id="basics" class="level1">
+<h1>Basics</h1>
+<p><strong>Variable:</strong> Values varies form Individual to individual.</p>
+<p><strong>Experiment:</strong> Repeation fo an event is called experiment.</p>
+<p><strong>Random Variable:</strong> Random variable is a variable that associate to probability. Random variable is an stochastic variable.</p>
+<p><strong>Stichastic Processes:</strong> <strong>Stochastic process</strong> or <strong>random process</strong> is a collection of random variables <strong>orderd</strong> by an index set. Let <span class="math inline">\(X_0, X_1, X_2, \dots;\)</span> be a set of random variables; that form a stochastic process ordered by the discrete index set <span class="math inline">\(\{1, 2, 3, \dots\}\)</span>.</p>
+<p>Notation: For discrete index set, <span class="math inline">\(\{X_n:n=0,1,2,\dots\}\)</span> and <span class="math inline">\(\{Y_t:t\geq0\}\)</span> with continuous index set <span class="math inline">\(\{t:t\geq0\}\)</span>.</p>
+<p><strong>Bivariate: Discrete and Continuous</strong> (i) Discrete time, Discrete state space (DD) (ii) Discrete time, Continuous state space (DC) (iii) Continuous time, Discrete state space (CD) (iv) Continuous time, Continuous state space (CC)</p>
 </section>
-<section id="complex-number" class="level3">
-<h3 class="anchored" data-anchor-id="complex-number">Complex Number</h3>
-<p><strong>Complex number:</strong> A complex number is a number that can be expressed in the form <span class="math inline">\(a+ib\)</span>, where <code>a</code> and <code>b</code> are real numbers and <code>i</code> is the imaginary unit satisfying the property that <span class="math inline">\(i^2 = -1\)</span>.</p>
-<p>If <span class="math inline">\(z=a+ib\)</span>, then <code>a</code> is called real part and <code>b</code> is called the imaginary part of <code>z</code>, which are denoted by <span class="math inline">\(Re\{z\}\)</span> and <span class="math inline">\(Im\{z\}\)</span> respectively.</p>
-<p><strong>Example:</strong> 1. <span class="math inline">\(2+5i\)</span>, where <span class="math inline">\(a=2,b=5\)</span> 2. <span class="math inline">\(3-i\)</span>, where <span class="math inline">\(a=3,b=-1\)</span></p>
-<p>Here, 1 and 2 are complex numbers because they can be expressed in the form <span class="math inline">\(a+ib\)</span>.</p>
+<section id="probability-generating-function-p.g.f" class="level1">
+<h1>Probability Generating Function (p.g.f)</h1>
+<p><strong>For two coin:</strong> TT, TH, HT, HH</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>No of Success <span class="math inline">\(X\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">Total</td>
+</tr>
+<tr class="even">
+<td>Probability <span class="math inline">\(p(x)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 14\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 12\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 14\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: center;"><span class="math inline">\(p_0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(p_1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(p_2\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<section id="probability-generating-function-pgf" class="level2">
+<h2 class="anchored" data-anchor-id="probability-generating-function-pgf">Probability Generating Function (pgf)</h2>
+<p><span class="math inline">\(p_0\)</span> = { No head }</p>
+<p><span class="math inline">\(p_1\)</span> = { One head }</p>
+<p><span class="math inline">\(p_2 = Pr\{x=2\}\)</span> = { Both are Head }</p>
 </section>
-<section id="complex-variable" class="level3">
-<h3 class="anchored" data-anchor-id="complex-variable">Complex Variable</h3>
-<p><strong>Complex Variable:</strong> If <span class="math inline">\(z=a+ib\)</span> is a complex number satisfying <span class="math inline">\(i^2=-1\)</span>, then <code>a</code> is called real part of <code>z</code> and <code>b</code> is called imaginary part of <code>z</code>, which are denoted by <span class="math inline">\(Re\{z\}\)</span> and <span class="math inline">\(Im\{z\}\)</span> respectively.</p>
-<p>The symbol <code>z</code>, which can stand for any complex number, is a complex variable.</p>
-<p><strong>Example:</strong> <span class="math inline">\(z_1 = 2+3i\)</span> and <span class="math inline">\(z_2=5-3i\)</span> Here, <span class="math inline">\(z_1\)</span> and <span class="math inline">\(z_2\)</span> are complex number.</p>
-</section>
-</section>
-<section id="line-diagram-of-a-complex-number-system" class="level2">
-<h2 class="anchored" data-anchor-id="line-diagram-of-a-complex-number-system">Line diagram of a complex number system:</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/clipboard-464886977.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="407"></p>
-</figure>
-</div>
-</section>
-<section id="real-number" class="level2">
-<h2 class="anchored" data-anchor-id="real-number">Real Number</h2>
-<p><strong>Real Numbers:</strong> All numbers which are situated on straight line are called real numbers. The set of real numbers is denoted by <span class="math inline">\(\mathbb{R}\)</span> and defined as,</p>
-<p><span class="math display">\[\mathbb{R} = \{\text{ Set of Real Numbers }\} = \{\mathbb{Q} \cup \mathbb{Q}' \}\]</span></p>
-<p><strong>Real Line:</strong> All the numbers positive or negative, rational or irrational can be represented on a straight line, say the axis of x which is called real line.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/clipboard-849242267.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p><span class="math display">\[\mathbb{Q} = \{\text{ Set of Rational Numbers }\}\]</span> <span class="math display">\[\mathbb{Z} = \{\text{ Set of Integer Numbers }\}\]</span> <span class="math display">\[\mathbb{N} = \{\text{ Set of Natural Numbers }\}\]</span> <span class="math display">\[\mathbb{R} = \{\text{ Set of Real Numbers }\}\]</span> <span class="math display">\[\mathbb{C} = \{\text{ Set of Real Numbers }\}\]</span></p>
-<p><span class="math display">\[\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}\subset \mathbb{C}\]</span></p>
+<section id="binomial-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="binomial-distribution">Binomial Distribution</h2>
+<p><span class="math inline">\(p(x) = {n\choose x} p^x (1-p)^{n-x}; x = 0, 1, 2, \dots , n\)</span></p>
+<p><span class="math inline">\(p(s) = \sum_{k=0}^n p_{k} s^k\)</span>$</p>
+<p><span class="math inline">\(=p_0 s^0 + p_1 s^1 +p_2 s^2 + \dots + p_n s^n\)</span></p>
+<p><span class="math inline">\(={n \choose 0} p^0q^{n-0}s^0 + {n \choose 1} p^1q^{n-1}s^1 +{n \choose 2} p^2q^{n-2}s^2+ \dots + {n \choose n} p^nq^{0}s^n\)</span></p>
+<p><span class="math inline">\(\therefore p(s)=(q+ps)^n\)</span></p>
 
 
 </section>
