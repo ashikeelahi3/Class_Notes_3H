@@ -1,5 +1,5 @@
 ---
-title: "B.Stat.-305: Stochastic Processes and Acturial Models"
+title: "Stochastic Processes and Acturial Models"
 format: html
 engine: knitr
 filters:

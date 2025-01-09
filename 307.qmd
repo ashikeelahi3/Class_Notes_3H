@@ -1,5 +1,5 @@
 ---
-title: "B.Stat.-307: Complex Variables and Transformation"
+title: "Complex Variable and Transformations"
 format: html
 engine: knitr
 filters:
@@ -46,13 +46,12 @@ $$\mathbb{R} = \{\text{ Set of Real Numbers }\} = \{\mathbb{Q} \cup \mathbb{Q}' 
 
 ![](images/clipboard-849242267.png){fig-align="center" width="350"}
 
-
 ### Properties of real numbers
-1. Commutative: $a+b = b+a$, $ab = ba$
-2. Associative: $(a+b)+c=a+(b+c)$, $(ab)c=a(bc)$
-3. Distributive: $a(b+c) = ab + ac$, $(a+b)c=ac+bc$
-4. Identity: $a+0=a$, $0+a=a$, $a\cdot1=a$, $1\cdot a = a$
 
+1.  Commutative: $a+b = b+a$, $ab = ba$
+2.  Associative: $(a+b)+c=a+(b+c)$, $(ab)c=a(bc)$
+3.  Distributive: $a(b+c) = ab + ac$, $(a+b)c=ac+bc$
+4.  Identity: $a+0=a$, $0+a=a$, $a\cdot1=a$, $1\cdot a = a$
 
 $$\mathbb{Q} = \{\text{ Set of Rational Numbers }\}$$ $$\mathbb{Z} = \{\text{ Set of Integer Numbers }\}$$ $$\mathbb{N} = \{\text{ Set of Natural Numbers }\}$$ $$\mathbb{R} = \{\text{ Set of Real Numbers }\}$$ $$\mathbb{C} = \{\text{ Set of Real Numbers }\}$$
 

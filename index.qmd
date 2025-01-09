@@ -23,6 +23,13 @@ Use the navigation bar above to explore notes for each topic:
 -   **307 Note**: Complex Variable and Transformations
 -   **308 Note**: Simulation and Modeling
 -   **309 Practical**: Practical
+    1.  Multivariate Distributions
+    2.  Estimation
+    3.  Hypothesis Testing
+    4.  Advanced Regression
+    5.  Stochastic Processes and Actuarial Models
+    6.  Sampling Techniques
+    7.  Simulation and Modeling
 
 ------------------------------------------------------------------------
 
