@@ -1,5 +1,5 @@
 ---
-title: "Class Notes"
+title: "Hyposthesis Testing"
 format: html
 engine: knitr
 filters:

@@ -1,5 +1,5 @@
 ---
-title: "Class Notes"
+title: "Advanced Regression"
 format: html
 engine: knitr
 filters:
