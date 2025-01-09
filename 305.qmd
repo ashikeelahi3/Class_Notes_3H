@@ -42,7 +42,7 @@ $p_2 = Pr\{x=2\}$ = { Both are Head }
 
 $p(x) = {n\choose x} p^x (1-p)^{n-x}; x = 0, 1, 2, \dots , n$
 
-$p(s) = \sum_{k=0}^n p_{k} s^k$$
+$p(s) = \sum_{k=0}^n p_{k} s^k$\$
 
 $=p_0 s^0 + p_1 s^1 +p_2 s^2 + \dots + p_n s^n$
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Class Notes</title>
+<title>B.Stat.-307: Complex Variables and Transformation – Class Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -139,15 +168,34 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#complex-numbers" id="toc-complex-numbers" class="nav-link active" data-scroll-target="#complex-numbers">Complex Numbers</a>
+  <ul class="collapse">
+  <li><a href="#number-and-complex-number" id="toc-number-and-complex-number" class="nav-link" data-scroll-target="#number-and-complex-number">Number and Complex Number</a>
+  <ul class="collapse">
+  <li><a href="#number" id="toc-number" class="nav-link" data-scroll-target="#number">Number</a></li>
+  <li><a href="#complex-number" id="toc-complex-number" class="nav-link" data-scroll-target="#complex-number">Complex Number</a></li>
+  <li><a href="#complex-variable" id="toc-complex-variable" class="nav-link" data-scroll-target="#complex-variable">Complex Variable</a></li>
+  </ul></li>
+  <li><a href="#line-diagram-of-a-complex-number-system" id="toc-line-diagram-of-a-complex-number-system" class="nav-link" data-scroll-target="#line-diagram-of-a-complex-number-system">Line diagram of a complex number system:</a></li>
+  <li><a href="#real-number" id="toc-real-number" class="nav-link" data-scroll-target="#real-number">Real Number</a>
+  <ul class="collapse">
+  <li><a href="#properties-of-real-numbers" id="toc-properties-of-real-numbers" class="nav-link" data-scroll-target="#properties-of-real-numbers">Properties of real numbers</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Class Notes</h1>
+<h1 class="title">B.Stat.-307: Complex Variables and Transformation</h1>
 </div>
 
 
@@ -164,8 +212,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="complex-numbers" class="level1">
+<h1>Complex Numbers</h1>
+<section id="number-and-complex-number" class="level2">
+<h2 class="anchored" data-anchor-id="number-and-complex-number">Number and Complex Number</h2>
+<section id="number" class="level3">
+<h3 class="anchored" data-anchor-id="number">Number</h3>
+<p><strong>Number:</strong> A number is a mathematical objects used to count, measure and also label. The original examples are the natural numbers 1, 2, 3, 4 and so on. A notational symbol that represents a number is called a numeral. In addition, to their use in counting and measuring, numerals are often used for labels (as with telephone numbers), for ordering (as with serial numbers) and for codes (as with ISBNs).</p>
+</section>
+<section id="complex-number" class="level3">
+<h3 class="anchored" data-anchor-id="complex-number">Complex Number</h3>
+<p><strong>Complex number:</strong> A complex number is a number that can be expressed in the form <span class="math inline">\(a+ib\)</span>, where <code>a</code> and <code>b</code> are real numbers and <code>i</code> is the imaginary unit satisfying the property that <span class="math inline">\(i^2 = -1\)</span>.</p>
+<p>If <span class="math inline">\(z=a+ib\)</span>, then <code>a</code> is called real part and <code>b</code> is called the imaginary part of <code>z</code>, which are denoted by <span class="math inline">\(Re\{z\}\)</span> and <span class="math inline">\(Im\{z\}\)</span> respectively.</p>
+<p><strong>Example:</strong> 1. <span class="math inline">\(2+5i\)</span>, where <span class="math inline">\(a=2,b=5\)</span> 2. <span class="math inline">\(3-i\)</span>, where <span class="math inline">\(a=3,b=-1\)</span></p>
+<p>Here, 1 and 2 are complex numbers because they can be expressed in the form <span class="math inline">\(a+ib\)</span>.</p>
+</section>
+<section id="complex-variable" class="level3">
+<h3 class="anchored" data-anchor-id="complex-variable">Complex Variable</h3>
+<p><strong>Complex Variable:</strong> If <span class="math inline">\(z=a+ib\)</span> is a complex number satisfying <span class="math inline">\(i^2=-1\)</span>, then <code>a</code> is called real part of <code>z</code> and <code>b</code> is called imaginary part of <code>z</code>, which are denoted by <span class="math inline">\(Re\{z\}\)</span> and <span class="math inline">\(Im\{z\}\)</span> respectively.</p>
+<p>The symbol <code>z</code>, which can stand for any complex number, is a complex variable.</p>
+<p><strong>Example:</strong> <span class="math inline">\(z_1 = 2+3i\)</span> and <span class="math inline">\(z_2=5-3i\)</span> Here, <span class="math inline">\(z_1\)</span> and <span class="math inline">\(z_2\)</span> are complex number.</p>
+</section>
+</section>
+<section id="line-diagram-of-a-complex-number-system" class="level2">
+<h2 class="anchored" data-anchor-id="line-diagram-of-a-complex-number-system">Line diagram of a complex number system:</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-464886977.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="407"></p>
+</figure>
+</div>
+</section>
+<section id="real-number" class="level2">
+<h2 class="anchored" data-anchor-id="real-number">Real Number</h2>
+<p><strong>Real Numbers:</strong> All numbers which are situated on straight line are called real numbers. The set of real numbers is denoted by <span class="math inline">\(\mathbb{R}\)</span> and defined as,</p>
+<p><span class="math display">\[\mathbb{R} = \{\text{ Set of Real Numbers }\} = \{\mathbb{Q} \cup \mathbb{Q}' \}\]</span></p>
+<p><strong>Real Line:</strong> All the numbers positive or negative, rational or irrational can be represented on a straight line, say the axis of x which is called real line.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-849242267.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="350"></p>
+</figure>
+</div>
+<section id="properties-of-real-numbers" class="level3">
+<h3 class="anchored" data-anchor-id="properties-of-real-numbers">Properties of real numbers</h3>
+<ol type="1">
+<li>Commutative: <span class="math inline">\(a+b = b+a\)</span>, <span class="math inline">\(ab = ba\)</span></li>
+<li>Associative: <span class="math inline">\((a+b)+c=a+(b+c)\)</span>, <span class="math inline">\((ab)c=a(bc)\)</span></li>
+<li>Distributive: <span class="math inline">\(a(b+c) = ab + ac\)</span>, <span class="math inline">\((a+b)c=ac+bc\)</span></li>
+<li>Identity: <span class="math inline">\(a+0=a\)</span>, <span class="math inline">\(0+a=a\)</span>, <span class="math inline">\(a\cdot1=a\)</span>, <span class="math inline">\(1\cdot a = a\)</span></li>
+</ol>
+<p><span class="math display">\[\mathbb{Q} = \{\text{ Set of Rational Numbers }\}\]</span> <span class="math display">\[\mathbb{Z} = \{\text{ Set of Integer Numbers }\}\]</span> <span class="math display">\[\mathbb{N} = \{\text{ Set of Natural Numbers }\}\]</span> <span class="math display">\[\mathbb{R} = \{\text{ Set of Real Numbers }\}\]</span> <span class="math display">\[\mathbb{C} = \{\text{ Set of Real Numbers }\}\]</span></p>
+<p><span class="math display">\[\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}\subset \mathbb{C}\]</span></p>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -182,6 +182,7 @@ window.Quarto = {
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#derivation-of-mnd" id="toc-derivation-of-mnd" class="nav-link" data-scroll-target="#derivation-of-mnd">Derivation of MND</a></li>
   </ul></li>
+  <li><a href="#quadratic-form" id="toc-quadratic-form" class="nav-link" data-scroll-target="#quadratic-form">Quadratic Form</a></li>
   </ul>
 </nav>
     </div>
@@ -222,7 +223,13 @@ window.Quarto = {
 </ol>
 <p><strong>Example:</strong></p>
 <p><span class="math inline">\(f(x) = kx^2; [0\le x \le 1]\)</span> is a pdf. Then find k</p>
-<p><strong>Answer:</strong> Thus f(x) is a pdf, <span class="math display">\[\therefore \int_x f(x) dx = 1\]</span> <span class="math display">\[\Rightarrow \int_0^1 kx^2 dx = 1\]</span> <span class="math display">\[\Rightarrow \frac{k}{3} [x^3]_0^1=1\]</span> <span class="math display">\[\Rightarrow \frac{k}{3} \times 1 = 1\]</span> <span class="math display">\[\therefore k = 3\]</span> Therfore, the pdf is <span class="math inline">\(f(x) = 3x^2; [0\le x \le 1]\)</span></p>
+<p><strong>Answer:</strong> Thus f(x) is a pdf,</p>
+<p><span class="math inline">\(\therefore \int_x f(x) dx = 1\)</span></p>
+<p><span class="math inline">\(\Rightarrow \int_0^1 kx^2 dx = 1\)</span></p>
+<p><span class="math inline">\(\Rightarrow \frac{k}{3} [x^3]_0^1=1\)</span></p>
+<p><span class="math inline">\(\Rightarrow \frac{k}{3} \times 1 = 1\)</span></p>
+<p><span class="math inline">\(\therefore k = 3\)</span></p>
+<p>Therfore, the pdf is <span class="math inline">\(f(x) = 3x^2; [0\le x \le 1]\)</span></p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -261,9 +268,15 @@ window.Quarto = {
 <p><span class="math inline">\(\therefore dX = |C|dY\)</span></p>
 <p>Then, <span class="math inline">\((X-\mu)' \Sigma^{-1} (X-\mu) = Y'C'\Sigma^{-1}CY = Y'IY=Y'Y = \sum_{i=1}^p y_i^2\)</span></p>
 <p>And the Jacobian transformation <span class="math inline">\(J = mod|C|\)</span></p>
-
-
 </section>
+</section>
+<section id="quadratic-form" class="level1">
+<h1>Quadratic Form</h1>
+<p><span class="math inline">\(Q=2x_1^2 + x_2^2 + 3x_3^2 + 6x_1x_2 + 9x_2x_3 + 12 x_1x_3\)</span></p>
+<p><span class="math inline">\(\Rightarrow Q = \begin{bmatrix} x_1 &amp; x_2 &amp; x_3  \end{bmatrix} \begin{bmatrix} 2&amp;3&amp;6 \\ 3&amp;1&amp;\frac{9}{2} \\ 6&amp;\frac{9}{2}&amp;3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = X'AX\)</span></p>
+<p>Where, <span class="math inline">\(X =\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}\)</span> and <span class="math inline">\(A = \begin{bmatrix} 2&amp;3&amp;6 \\ 3&amp;1&amp;\frac{9}{2} \\ 6&amp;\frac{9}{2}&amp;3 \end{bmatrix}\)</span></p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -357,7 +370,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/stat-notes\.netlify\.app");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

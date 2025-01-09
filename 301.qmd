@@ -26,7 +26,19 @@ Mean vector $\mu' = (\mu_1 , \mu_2, \dots , \mu_k)'; [k>2]$
 
 $f(x) = kx^2; [0\le x \le 1]$ is a pdf. Then find k
 
-**Answer:** Thus f(x) is a pdf, $$\therefore \int_x f(x) dx = 1$$ $$\Rightarrow \int_0^1 kx^2 dx = 1$$ $$\Rightarrow \frac{k}{3} [x^3]_0^1=1$$ $$\Rightarrow \frac{k}{3} \times 1 = 1$$ $$\therefore k = 3$$ Therfore, the pdf is $f(x) = 3x^2; [0\le x \le 1]$
+**Answer:** Thus f(x) is a pdf, 
+
+$\therefore \int_x f(x) dx = 1$ 
+
+$\Rightarrow \int_0^1 kx^2 dx = 1$
+
+$\Rightarrow \frac{k}{3} [x^3]_0^1=1$
+
+$\Rightarrow \frac{k}{3} \times 1 = 1$
+
+$\therefore k = 3$
+
+Therfore, the pdf is $f(x) = 3x^2; [0\le x \le 1]$
 
 ```{r echo=FALSE}
 x = seq(0, 1, 0.01)
@@ -72,3 +84,24 @@ $\therefore dX = |C|dY$
 Then, $(X-\mu)' \Sigma^{-1} (X-\mu) = Y'C'\Sigma^{-1}CY = Y'IY=Y'Y = \sum_{i=1}^p y_i^2$
 
 And the Jacobian transformation $J = mod|C|$
+
+
+
+
+
+
+
+
+
+
+
+# Quadratic Form
+
+$Q=2x_1^2 + x_2^2 + 3x_3^2 + 6x_1x_2 + 9x_2x_3 + 12 x_1x_3$
+
+$\Rightarrow Q = \begin{bmatrix} x_1 & x_2 & x_3  \end{bmatrix} \begin{bmatrix} 2&3&6 \\ 3&1&\frac{9}{2} \\ 6&\frac{9}{2}&3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = X'AX$
+
+Where, 
+$X =\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}$
+and $A = \begin{bmatrix} 2&3&6 \\ 3&1&\frac{9}{2} \\ 6&\frac{9}{2}&3 \end{bmatrix}$
+

@@ -14,39 +14,44 @@ This website contains all your class notes, practicals, and other resources orga
 
 Use the navigation bar above to explore notes for each topic:
 
-- **301 Note**: Introduction to the basics.
-- **302 Note**: Advanced topics and applications.
-- **303 Note**: Problem-solving techniques.
-- **309 Practical**: Hands-on exercises and examples.
+-   **301 Note**: Multivariate Distribution
+-   **302 Note**: Estimation
+-   **303 Note**: Hyposthesis Testing
+-   **304 Note**: Advanced Regression
+-   **305 Note**: Stochastic Processes and Actuarial Models
+-   **306 Note**: Sampling Techniques
+-   **307 Note**: Complex Variable and Transformations
+-   **308 Note**: Simulation and Modeling
+-   **309 Practical**: Practical
 
----
+------------------------------------------------------------------------
 
 ## Featured Content
 
 ### Note of the Week: 301 Note
-[![Read the Note](assets/301-thumbnail.png)](301.qmd)
-Dive into the foundational concepts that set the stage for success in this course.
 
----
+[![Read the Note](assets/301-thumbnail.png)](301.qmd) Dive into the foundational concepts that set the stage for success in this course.
+
+------------------------------------------------------------------------
 
 ## Contact
 
 Have questions or suggestions? Reach out to your instructor or classmates for assistance.
 
----
+------------------------------------------------------------------------
 
 ### **Customization Tips**
-- Replace placeholder text with your content.
-- Update `assets/301-thumbnail.png` with the actual image path, or remove it if not needed.
-- Add sections for announcements, news, or summaries.
+
+-   Replace placeholder text with your content.
+-   Update `assets/301-thumbnail.png` with the actual image path, or remove it if not needed.
+-   Add sections for announcements, news, or summaries.
 
 Would you like to add specific content or features to this page? For example, a recent notes list, images, or embedded videos?
 
 ## R Playground
+
 ```{webr-r}
 x = 1:10
 y = 2*x
 plot(x, y, type="l")
 ```
-
-
