@@ -49,3 +49,37 @@ $=p_0 s^0 + p_1 s^1 +p_2 s^2 + \dots + p_n s^n$
 $={n \choose 0} p^0q^{n-0}s^0 + {n \choose 1} p^1q^{n-1}s^1 +{n \choose 2} p^2q^{n-2}s^2+ \dots + {n \choose n} p^nq^{0}s^n$
 
 $\therefore p(s)=(q+ps)^n$
+
+
+
+
+
+
+# Markov Chain
+
+## 2 states and m-steps Markov Chain
+
+$P = \begin{pmatrix} q & p \\ p & q \end{pmatrix}$
+
+$P^2 = \begin{pmatrix} q^2+p^2 & 2pq \\ 2pq & q^2+p^2 \end{pmatrix}$
+
+Now, $q^2+p^2 = \frac{2q^2+2p^2}{2} = \frac{q^2+2pq+p^2 +q^2-2pq+p^2}{2}$
+
+$=\frac{(p+q)^2 + (q-p)^2}{2} = \frac{1+(q-p)^2}{2} = \frac{1}{2}+\frac{(q-p)^2}{2}$
+
+And, $2pq=\frac{4pq}2=\frac{p^2+2pq+q^2-(q^2 - 2pq+p^2)}{2}$
+
+$=\frac{(p+q)^2 - (q-p)^2}{2} = \frac{1-(q-p)^2}{2} = \frac{1}{2}-\frac{(q-p)^2}{2}$
+
+$\therefore P^{(2)} = \begin{pmatrix} \frac 12+\frac{(q-p)^2}2 & \frac 12-\frac{(q-p)^2}2 \\ \frac 12-\frac{(q-p)^2}2 & \frac 12+\frac{(q-p)^2}2\end{pmatrix}$
+
+
+Similarly, $P^{(3)} = \begin{pmatrix} \frac 12+\frac{(q-p)^3}2 & \frac 12-\frac{(q-p)^3}2 \\ \frac 12-\frac{(q-p)^3}2 & \frac 12+\frac{(q-p)^3}2\end{pmatrix}$
+
+$\therefore P^{(m)} = \begin{pmatrix} \frac 12+\frac{(q-p)^m}2 & \frac 12-\frac{(q-p)^m}2 \\ \frac 12-\frac{(q-p)^m}2 & \frac 12+\frac{(q-p)^m}2\end{pmatrix}$
+
+Here, $\frac{(q-p)^m}2$ is the stochastic part and $\frac12$ is the deterministic part
+
+When, $m \to \infty$, then $\frac{(q-p)^m}2 \to 0$. So the matrix tends to deterministic from stochastic and the P becomes,
+
+$P^{(m)}=\begin{pmatrix} \frac12 & \frac12 \\ \frac12 & \frac 12\end{pmatrix}$
