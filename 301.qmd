@@ -26,9 +26,9 @@ Mean vector $\mu' = (\mu_1 , \mu_2, \dots , \mu_k)'; [k>2]$
 
 $f(x) = kx^2; [0\le x \le 1]$ is a pdf. Then find k
 
-**Answer:** Thus f(x) is a pdf, 
+**Answer:** Thus f(x) is a pdf,
 
-$\therefore \int_x f(x) dx = 1$ 
+$\therefore \int_x f(x) dx = 1$
 
 $\Rightarrow \int_0^1 kx^2 dx = 1$
 
@@ -85,23 +85,41 @@ Then, $(X-\mu)' \Sigma^{-1} (X-\mu) = Y'C'\Sigma^{-1}CY = Y'IY=Y'Y = \sum_{i=1}^
 
 And the Jacobian transformation $J = mod|C|$
 
-
-
-
-
-
-
-
-
-
-
 # Quadratic Form
 
 $Q=2x_1^2 + x_2^2 + 3x_3^2 + 6x_1x_2 + 9x_2x_3 + 12 x_1x_3$
 
 $\Rightarrow Q = \begin{bmatrix} x_1 & x_2 & x_3  \end{bmatrix} \begin{bmatrix} 2&3&6 \\ 3&1&\frac{9}{2} \\ 6&\frac{9}{2}&3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = X'AX$
 
-Where, 
-$X =\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}$
-and $A = \begin{bmatrix} 2&3&6 \\ 3&1&\frac{9}{2} \\ 6&\frac{9}{2}&3 \end{bmatrix}$
+Where, $X =\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}$ and $A = \begin{bmatrix} 2&3&6 \\ 3&1&\frac{9}{2} \\ 6&\frac{9}{2}&3 \end{bmatrix}$
 
+## Properties of Quadratic Form
+
+1. A quadratic form $Q=X'AX$ is a homogeneous polynomial of degree two with any number of variables. 
+
+2. If $X \sim N_p (\mu, \Sigma)$, then the quardatic form $Q_1 = X'AX$ and $Q_2 =X'BX$ are independent iff $A\Sigma B=0$.
+
+3. If $X \sim N_p (0, I)$, then the quardatic form $Q = X'AX$ follows $\chi^2$-distribution with k-df.
+
+4. If $X \sim N_p (\mu, I)$, then the quardatic form $Q = X'AX \sim \chi'^2$ (Non central $\chi^2$-distribution) with k-df and non-centrility parameter, $\lambda=\frac12 \mu'A\mu$.
+
+5. If $X \sim N_p (0, \Sigma)$, then the quardatic form $Q = X'AX$ follows $\chi^2$-distribution with k-df.
+
+6. If $X \sim N_p (\mu, \Sigma)$, then the m.g.f of quadratic form $Q = X'AX$ is $M_Q (t) = (1-2d_{ii}t)^{-\frac k2}$.
+
+
+## Use/Application
+
+1. It is used in multivariate normal distribution and analysis.
+
+2. Sometimes is used in ANOVA and congruent reduction.
+
+3. It is used in both central and non-central sampling distribution.
+
+4. To find maximum and minimum values function of the severil variables. 
+
+5. It is used in Wishart and Hotelings' $T^2$-distribution.
+
+6. It is used in derivation of $\chi'^2$ (Non central $\chi^2$).
+
+7. ... And many more
