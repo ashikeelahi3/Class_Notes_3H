@@ -5,3 +5,48 @@ engine: knitr
 filters:
   - webr
 ---
+
+# Survey Sampling in Finite Population
+
+## History of Survey Sampling
+
+-   The field of survey sampling can claim many roots. These roots include a variety of activities over the nineteenth and twentieth centuries in areas such as agriculture, forestry, government administration, and social research. It is the latter two areas, the collection of large sets of data by governments and individual social investigators.
+
+-   Several histories of sampling have been written. Among them are Chang(1976), Duncan and Shelton(1978), Hansen, Dalenius and Tepping(1985), Kruskal and Mosteller(1980), Seng(1951), Stephan(1948), Sukhatme(1966), and Yates(1948).
+
+-   Berlin meeting(Kiear,1905) was the first to introduce concepts of Simple Random Sampling without replacement.
+
+
+## Need For Statistical Data
+
+-   The important users of statistical data, among others, include government, industry, business, research institutions, public organizations, and international agencies and organizations.
+
+-   To discharge its various responsibilities, the government needs variety of information regarding different sectors of economy, trade, industrial production, health and mortality, population, livestock, agriculture, forestry, environment, meteorology and available resources. 
+
+-   Agricultural production data are of immense use to the state for planning to feed the nation.
+
+-   In case of industry and business, the information is to be collected on labor, cost and quality of production, stock, and the demand and supply positions for proper planning of production levels and sales campaigns. 
+
+-   The research institutions need data to verify the earlier finding or to draw new inferences.
+
+-   The data are used by public organizations to assess the state policies, and to point it out to the administration if these are not up to the expectations of the people.
+
+-   The international organizations collect data to present comparative positions of different countries in respect of economy, education, health, culture, etc. Besides, they also use it to frame their policies at the international level for the welfare of people.
+
+
+## Sources of Data
+
+**Primary Source:** The data collected by the investigator from the original source
+
+- Through Interview
+- Through Questionnaire
+- Through Schedule
+- Through Local agents
+- Through Observation
+- Through Experimentation
+
+**Secondary Source:** The  data had already been collected by some agencies or individuals and are now available in the published or unpublished records
+
+- **Published Source:** Govt., (BBS) Semi Govt. organizations, International organizations like UNO,FAO,UNESCO,WHO etc., Trade and financial Journals.
+
+- **Unpublished Source:** Private and Business firms etc.

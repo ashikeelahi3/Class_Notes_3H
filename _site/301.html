@@ -182,7 +182,11 @@ window.Quarto = {
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#derivation-of-mnd" id="toc-derivation-of-mnd" class="nav-link" data-scroll-target="#derivation-of-mnd">Derivation of MND</a></li>
   </ul></li>
-  <li><a href="#quadratic-form" id="toc-quadratic-form" class="nav-link" data-scroll-target="#quadratic-form">Quadratic Form</a></li>
+  <li><a href="#quadratic-form" id="toc-quadratic-form" class="nav-link" data-scroll-target="#quadratic-form">Quadratic Form</a>
+  <ul class="collapse">
+  <li><a href="#properties-of-quadratic-form" id="toc-properties-of-quadratic-form" class="nav-link" data-scroll-target="#properties-of-quadratic-form">Properties of Quadratic Form</a></li>
+  <li><a href="#useapplication" id="toc-useapplication" class="nav-link" data-scroll-target="#useapplication">Use/Application</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -275,8 +279,31 @@ window.Quarto = {
 <p><span class="math inline">\(Q=2x_1^2 + x_2^2 + 3x_3^2 + 6x_1x_2 + 9x_2x_3 + 12 x_1x_3\)</span></p>
 <p><span class="math inline">\(\Rightarrow Q = \begin{bmatrix} x_1 &amp; x_2 &amp; x_3  \end{bmatrix} \begin{bmatrix} 2&amp;3&amp;6 \\ 3&amp;1&amp;\frac{9}{2} \\ 6&amp;\frac{9}{2}&amp;3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = X'AX\)</span></p>
 <p>Where, <span class="math inline">\(X =\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}\)</span> and <span class="math inline">\(A = \begin{bmatrix} 2&amp;3&amp;6 \\ 3&amp;1&amp;\frac{9}{2} \\ 6&amp;\frac{9}{2}&amp;3 \end{bmatrix}\)</span></p>
+<section id="properties-of-quadratic-form" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-quadratic-form">Properties of Quadratic Form</h2>
+<ol type="1">
+<li><p>A quadratic form <span class="math inline">\(Q=X'AX\)</span> is a homogeneous polynomial of degree two with any number of variables.</p></li>
+<li><p>If <span class="math inline">\(X \sim N_p (\mu, \Sigma)\)</span>, then the quardatic form <span class="math inline">\(Q_1 = X'AX\)</span> and <span class="math inline">\(Q_2 =X'BX\)</span> are independent iff <span class="math inline">\(A\Sigma B=0\)</span>.</p></li>
+<li><p>If <span class="math inline">\(X \sim N_p (0, I)\)</span>, then the quardatic form <span class="math inline">\(Q = X'AX\)</span> follows <span class="math inline">\(\chi^2\)</span>-distribution with k-df.</p></li>
+<li><p>If <span class="math inline">\(X \sim N_p (\mu, I)\)</span>, then the quardatic form <span class="math inline">\(Q = X'AX \sim \chi'^2\)</span> (Non central <span class="math inline">\(\chi^2\)</span>-distribution) with k-df and non-centrility parameter, <span class="math inline">\(\lambda=\frac12 \mu'A\mu\)</span>.</p></li>
+<li><p>If <span class="math inline">\(X \sim N_p (0, \Sigma)\)</span>, then the quardatic form <span class="math inline">\(Q = X'AX\)</span> follows <span class="math inline">\(\chi^2\)</span>-distribution with k-df.</p></li>
+<li><p>If <span class="math inline">\(X \sim N_p (\mu, \Sigma)\)</span>, then the m.g.f of quadratic form <span class="math inline">\(Q = X'AX\)</span> is <span class="math inline">\(M_Q (t) = (1-2d_{ii}t)^{-\frac k2}\)</span>.</p></li>
+</ol>
+</section>
+<section id="useapplication" class="level2">
+<h2 class="anchored" data-anchor-id="useapplication">Use/Application</h2>
+<ol type="1">
+<li><p>It is used in multivariate normal distribution and analysis.</p></li>
+<li><p>Sometimes is used in ANOVA and congruent reduction.</p></li>
+<li><p>It is used in both central and non-central sampling distribution.</p></li>
+<li><p>To find maximum and minimum values function of the severil variables.</p></li>
+<li><p>It is used in Wishart and Hotelings’ <span class="math inline">\(T^2\)</span>-distribution.</p></li>
+<li><p>It is used in derivation of <span class="math inline">\(\chi'^2\)</span> (Non central <span class="math inline">\(\chi^2\)</span>).</p></li>
+<li><p>… And many more</p></li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -370,7 +397,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/stat-notes\.netlify\.app");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

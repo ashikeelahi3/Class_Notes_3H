@@ -50,11 +50,6 @@ $={n \choose 0} p^0q^{n-0}s^0 + {n \choose 1} p^1q^{n-1}s^1 +{n \choose 2} p^2q^
 
 $\therefore p(s)=(q+ps)^n$
 
-
-
-
-
-
 # Markov Chain
 
 ## 2 states and m-steps Markov Chain
@@ -72,7 +67,6 @@ And, $2pq=\frac{4pq}2=\frac{p^2+2pq+q^2-(q^2 - 2pq+p^2)}{2}$
 $=\frac{(p+q)^2 - (q-p)^2}{2} = \frac{1-(q-p)^2}{2} = \frac{1}{2}-\frac{(q-p)^2}{2}$
 
 $\therefore P^{(2)} = \begin{pmatrix} \frac 12+\frac{(q-p)^2}2 & \frac 12-\frac{(q-p)^2}2 \\ \frac 12-\frac{(q-p)^2}2 & \frac 12+\frac{(q-p)^2}2\end{pmatrix}$
-
 
 Similarly, $P^{(3)} = \begin{pmatrix} \frac 12+\frac{(q-p)^3}2 & \frac 12-\frac{(q-p)^3}2 \\ \frac 12-\frac{(q-p)^3}2 & \frac 12+\frac{(q-p)^3}2\end{pmatrix}$
 

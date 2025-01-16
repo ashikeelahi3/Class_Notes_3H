@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>B.Stat.-305: Stochastic Processes and Acturial Models – Class Notes</title>
+<title>Stochastic Processes and Acturial Models – Class Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -179,6 +179,10 @@ window.Quarto = {
   <li><a href="#probability-generating-function-pgf" id="toc-probability-generating-function-pgf" class="nav-link" data-scroll-target="#probability-generating-function-pgf">Probability Generating Function (pgf)</a></li>
   <li><a href="#binomial-distribution" id="toc-binomial-distribution" class="nav-link" data-scroll-target="#binomial-distribution">Binomial Distribution</a></li>
   </ul></li>
+  <li><a href="#markov-chain" id="toc-markov-chain" class="nav-link" data-scroll-target="#markov-chain">Markov Chain</a>
+  <ul class="collapse">
+  <li><a href="#states-and-m-steps-markov-chain" id="toc-states-and-m-steps-markov-chain" class="nav-link" data-scroll-target="#states-and-m-steps-markov-chain">2 states and m-steps Markov Chain</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -187,7 +191,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">B.Stat.-305: Stochastic Processes and Acturial Models</h1>
+<h1 class="title">Stochastic Processes and Acturial Models</h1>
 </div>
 
 
@@ -254,6 +258,24 @@ window.Quarto = {
 <p><span class="math inline">\(=p_0 s^0 + p_1 s^1 +p_2 s^2 + \dots + p_n s^n\)</span></p>
 <p><span class="math inline">\(={n \choose 0} p^0q^{n-0}s^0 + {n \choose 1} p^1q^{n-1}s^1 +{n \choose 2} p^2q^{n-2}s^2+ \dots + {n \choose n} p^nq^{0}s^n\)</span></p>
 <p><span class="math inline">\(\therefore p(s)=(q+ps)^n\)</span></p>
+</section>
+</section>
+<section id="markov-chain" class="level1">
+<h1>Markov Chain</h1>
+<section id="states-and-m-steps-markov-chain" class="level2">
+<h2 class="anchored" data-anchor-id="states-and-m-steps-markov-chain">2 states and m-steps Markov Chain</h2>
+<p><span class="math inline">\(P = \begin{pmatrix} q &amp; p \\ p &amp; q \end{pmatrix}\)</span></p>
+<p><span class="math inline">\(P^2 = \begin{pmatrix} q^2+p^2 &amp; 2pq \\ 2pq &amp; q^2+p^2 \end{pmatrix}\)</span></p>
+<p>Now, <span class="math inline">\(q^2+p^2 = \frac{2q^2+2p^2}{2} = \frac{q^2+2pq+p^2 +q^2-2pq+p^2}{2}\)</span></p>
+<p><span class="math inline">\(=\frac{(p+q)^2 + (q-p)^2}{2} = \frac{1+(q-p)^2}{2} = \frac{1}{2}+\frac{(q-p)^2}{2}\)</span></p>
+<p>And, <span class="math inline">\(2pq=\frac{4pq}2=\frac{p^2+2pq+q^2-(q^2 - 2pq+p^2)}{2}\)</span></p>
+<p><span class="math inline">\(=\frac{(p+q)^2 - (q-p)^2}{2} = \frac{1-(q-p)^2}{2} = \frac{1}{2}-\frac{(q-p)^2}{2}\)</span></p>
+<p><span class="math inline">\(\therefore P^{(2)} = \begin{pmatrix} \frac 12+\frac{(q-p)^2}2 &amp; \frac 12-\frac{(q-p)^2}2 \\ \frac 12-\frac{(q-p)^2}2 &amp; \frac 12+\frac{(q-p)^2}2\end{pmatrix}\)</span></p>
+<p>Similarly, <span class="math inline">\(P^{(3)} = \begin{pmatrix} \frac 12+\frac{(q-p)^3}2 &amp; \frac 12-\frac{(q-p)^3}2 \\ \frac 12-\frac{(q-p)^3}2 &amp; \frac 12+\frac{(q-p)^3}2\end{pmatrix}\)</span></p>
+<p><span class="math inline">\(\therefore P^{(m)} = \begin{pmatrix} \frac 12+\frac{(q-p)^m}2 &amp; \frac 12-\frac{(q-p)^m}2 \\ \frac 12-\frac{(q-p)^m}2 &amp; \frac 12+\frac{(q-p)^m}2\end{pmatrix}\)</span></p>
+<p>Here, <span class="math inline">\(\frac{(q-p)^m}2\)</span> is the stochastic part and <span class="math inline">\(\frac12\)</span> is the deterministic part</p>
+<p>When, <span class="math inline">\(m \to \infty\)</span>, then <span class="math inline">\(\frac{(q-p)^m}2 \to 0\)</span>. So the matrix tends to deterministic from stochastic and the P becomes,</p>
+<p><span class="math inline">\(P^{(m)}=\begin{pmatrix} \frac12 &amp; \frac12 \\ \frac12 &amp; \frac 12\end{pmatrix}\)</span></p>
 
 
 </section>
@@ -350,7 +372,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/stat-notes\.netlify\.app");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
